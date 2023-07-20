@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Result Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Student Result Management System</h1>
+		<form id="student-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="roll">Roll Number:</label>
+			<input type="text" id="roll" name="roll"><br><br>
+			<label for="maths">Maths:</label>
+			<input type="text" id="maths" name="maths"><br><br>
+			<label for="science">Science:</label>
+			<input type="text" id="science" name="science"><br><br>
+			<label for="english">English:</label>
+			<input type="text" id="english" name="english"><br><br>
+			<button type="button" onclick="addStudent()">Add Student</button>
+		</form>
+		<table id="result-table">
+			<tr>
+				<th>Name</th>
+				<th>Roll Number</th>
+				<th>Maths</th>
+				<th>Science</th>
+				<th>English</th>
+				<th>Total</th>
+				<th>Percentage</th>
+				<th>Grade</th>
+			</tr>
+		</table>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
